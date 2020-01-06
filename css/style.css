@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family:  'Raleway','M PLUS 1p', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic',sans-serif;
+  font-size: 1rem;
+  color: #403A3D;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 2.5rem;
+  border-radius: 0;
+  background-color: #F7EDEA;
+}
+.wrapper {
+  margin-bottom: 0;
+  padding: 1.4rem 0 2.5rem;
+  border-radius: 0;
+}
+.logo{
+  border: none;
+  font-family: 'Calligraffitti', cursive;
+  font-size: 2.3rem;
+  color: #D9325E;
+  text-transform: lowercase;
+}
+p {
+  color: rgba(64, 58, 61, 0.8);
+}
+
+/* btn  */
+.btn-outline-light {
+  background-color: rgb(128, 226, 163);
+  border: none;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 30px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem;
+  color: #ffffff;
+  background-color: rgb(128, 226, 163);
+  border-color: rgb(128, 226, 163);
+}
+.btn-outline-light:hover,
+.btn-secondary:hover,
+.form-btn:hover {
+  color: #fff;
+  background-color: #A3D9B6;
+  border-color: #A3D9B6;
+  transition: 1s;
+}
+
+/* ---navigation--- */
+.navbar {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: .1rem;
+  background: rgba(242, 206, 226, 0.75) !important;
+}
+.navbar-brand .logo {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 0;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #D9325E;
+  transition: .5s;
+}
+
+/* ---Landing Page--- */
+.home-inner {
+  background-image: url(../flower_img/top.jpg);
+  background-size: cover;
+  position: relative;
+	height:100%;
+}
+.home-inner::before{
+	background-color: rgba(242, 206, 226, 0.3);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: #FFF;
+}
+.caption h1 {
+  font-family: 'Calligraffitti', cursive;
+  font-size: 6rem;
+  letter-spacing: 0.27rem;
+  text-shadow: .1rem .1rem 1rem #403A3D;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem #403A3D;
+  padding-bottom: 1.6rem;
+}
+
+
+/* ---service section--- */
+.heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+.heading-underline {
+  width: 4rem;
+  margin: 0 auto 1.4rem; 
+  border-bottom: 7px dotted #F2C84B;
+}
+
+h4 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 7px dotted #F2CEE2;
+}
+.narrow {
+  width: 85%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+.service-img {
+  width: 100%;
+}
+
+/* ---owner section--- */
+
+.feature svg.svg-inline--fa {
+  color: #1ebba3;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+.feature p {
+  font-size: 1.1rem;
+}
+.owner-img {
+  width: 100%;
+  /* height: 300px; */
+  border-radius: 60% 55%;
+  object-fit: cover;
+}
+.owner-text {
+  font-size: 0.95rem;
+}
+
+/* bouquet section */
+
+.bouquet-bg {
+  background: url(../flower_img/bouquet.jpg) no-repeat center / cover fixed;
+}
+.bouquet {
+  width: 90%;
+  /* height: 400px; */
+  background-color: rgba(247, 237, 234, 0.8);
+  margin: 0 auto;
+  padding: 3rem;
+}
+.bouquet-list {
+  margin-bottom: 2.6rem;
+}
+.bouquet-list li {
+  padding: .3rem;
+  font-size: 1.5rem;
+}
+
+/* arrangement section */
+.arrangement-img {
+  width: 100%;
+}
+.arrangement-item {
+  margin-bottom: 4.5rem;
+}
+.arrangement-item h4{
+  border-top: 3px dotted #F2CEE2;
+  border-bottom: 3px dotted #F2CEE2;
+}
+.arrangement-item p {
+  margin-top: 1.5rem;
+  line-height: 1rem;
+}
+
+/* contact section */
+.contact-bg {
+  background-image: url(../flower_img/form.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height:100%;
+}
+.contact-bg::before{
+background-color: rgba(255, 255, 255, 0.5);
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+content: ' ';
+}
+
+/* form  */
+.form-wrapper form{
+  margin: 0 auto;
+}
+.form-item {
+  margin-bottom: 20px;
+  padding: 8px !important;
+  border: 1px solid #fff;
+}
+.form-item:hover {
+  outline: 1px solid #A3D9B6;
+  box-shadow: 0 0 10px 2px #A3D9B6;
+}
+.form-btn{
+  background-color: #1ebba3;
+  border: none;
+  border-width: medium;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem;
+  color: #ffffff;
+  border-color: #1ebba3;
+}
+
+/* access section */
+
+.access-list li{
+  margin: 1rem;
+}
+
+
+/* footer section */
+footer {
+  background-color: #F2C84B;
+  color: #ffffff;
+  padding: 2rem 0 2rem;
+  /* margin-top: 1rem; */
+}
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: #ffffff;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+
+/* ---media Queries--- */
+@media (max-width: 767px) {
+  p {
+    font-size: 0.9rem;
+  }
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  .clients img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+
+/*============= COURSE SECTION =============*/
+
+/* .narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+} */
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
